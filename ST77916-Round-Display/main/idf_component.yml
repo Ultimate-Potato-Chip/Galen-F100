@@ -1,0 +1,3 @@
+dependencies:
+  # esp_lcd_st77916 removed - using custom st77916_panel driver instead
+  lvgl/lvgl: "^8.3.0"

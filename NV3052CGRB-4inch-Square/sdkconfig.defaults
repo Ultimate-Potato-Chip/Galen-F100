@@ -1,0 +1,21 @@
+# Target: ESP32-S3
+CONFIG_IDF_TARGET="esp32s3"
+
+# CPU frequency
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+
+# Increase main task stack for init
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+
+# LCD RGB panel bounce buffer ISR must run from IRAM
+CONFIG_ESP_LCD_RGB_ISR_IRAM_SAFE=y
+
+# NOTE: PSRAM is NOT required for the bounce-buffer display approach.
+# If your board has PSRAM (e.g. N16R8 = octal, N4R2 = quad),
+# uncomment and set the matching lines below:
+#
+# CONFIG_SPIRAM=y
+# CONFIG_SPIRAM_MODE_OCT=y    # for octal PSRAM (N16R8, N8R8)
+# CONFIG_SPIRAM_MODE_QUAD=y   # for quad PSRAM  (N4R2, N8R2)
+# CONFIG_SPIRAM_SPEED_80M=y
+# CONFIG_SPIRAM_USE_MALLOC=y
