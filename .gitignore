@@ -1,0 +1,21 @@
+# Syncthing
+.stfolder/
+.stversions/
+
+# Build output
+build/
+.pio/
+STM32H753-Dashboard/Debug/
+*.o
+*.d
+
+# ESP-IDF component manager downloads (restored from dependencies.lock)
+managed_components/
+
+# Caches / agent tooling
+.cache/
+.agents/
+skills-lock.json
+
+# Syncthing config (Syncthing is being retired)
+.stignore
