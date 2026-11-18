@@ -1,0 +1,17 @@
+# ESP-IDF build output
+build/
+sdkconfig
+sdkconfig.old
+
+# VS Code (keep settings.json for IDF path, but ignore others)
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
